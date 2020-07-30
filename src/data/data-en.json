@@ -1,13 +1,17 @@
 {
-  "time": "Thu Jul 30 2020 14:30:17 GMT+0800 (China Standard Time)",
+  "time": "Thu Jul 30 2020 18:25:41 GMT+0800 (China Standard Time)",
   "meta": {
     "author": "Chris Lin",
     "keywords": "resume, front-end, javascript, typescript, developer, engineer",
     "subject": "The Resume Of Chris Lin",
     "title": "Resume"
   },
+  "repo": {
+    "label": "Other Ver",
+    "link": "https://github.com/seognil/resume"
+  },
   "header": {
-    "name": "Chris Lin",
+    "name": "Place Holder",
     "role": "Front-end Developer",
     "contacts": [
       "Shanghai, China",
@@ -24,7 +28,7 @@
   "edu": {
     "title": "Education",
     "degree": "Bachelor of Engineering (B.Eng.) in Computer Science",
-    "college": "Shanghai Institute of Technology",
+    "college": "Shanghai Placeholder University",
     "city": "Shanghai, China",
     "date": "Sep 2011 - Jun 2015"
   },
@@ -33,10 +37,10 @@
     "skills": [
       {
         "label": "Languages",
-        "list": "JavaScript(4+ years), TypeScript(1+ years), HTML, CSS"
+        "list": "JavaScript (4+ years), TypeScript (1+ years), HTML, CSS"
       },
       {
-        "label": "Paradigms",
+        "label": "Designs",
         "list": "FP, FRP, OOP, MVVM, TDD, GoF"
       },
       {

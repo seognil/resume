@@ -6434,6 +6434,16 @@ typeface-lato@^0.0.75:
   resolved "https://registry.npm.taobao.org/typeface-lato/download/typeface-lato-0.0.75.tgz#8aa11c5611dc38416837c089b265a2abd1f7dd31"
   integrity sha1-iqEcVhHcOEFoN8CJsmWiq9H33TE=
 
+typeface-martel@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.npm.taobao.org/typeface-martel/download/typeface-martel-0.0.72.tgz#66307fa12732db7e9f071e3e134e9f87cc5cc9d3"
+  integrity sha1-ZjB/oScy236fBx4+E06fh8xcydM=
+
+typeface-open-sans@^0.0.75:
+  version "0.0.75"
+  resolved "https://registry.npm.taobao.org/typeface-open-sans/download/typeface-open-sans-0.0.75.tgz#20d0c330f14c0c40463c334adbedd6005389abe4"
+  integrity sha1-INDDMPFMDEBGPDNK2+3WAFOJq+Q=
+
 typescript@^3.9.7:
   version "3.9.7"
   resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"

@@ -10,5 +10,5 @@
       "#/*": ["./src/*"]
     }
   },
-  "include": ["./src", "./demo"]
+  "include": ["./src", "./demo", "font.d.ts"]
 }

@@ -2,8 +2,8 @@
   "scripts": {
     "start:demo": "parcel demo/scripts/preview.html",
     "build:demo": "yarn babel-run demo/scripts/export.tsx",
-    "start": "parcel src/scripts/preview.html",
-    "build": "yarn babel-run src/scripts/export.tsx",
+    "start": "yarn tojson; parcel src/scripts/preview.html",
+    "build": "yarn tojson; yarn babel-run src/scripts/export.tsx",
     "babel-run": "babel-node --extensions='.ts,.tsx'",
     "tojson": "yarn babel-run src/scripts/tojson.ts",
     "lint": "eslint --fix . && prettier --write '{,!(node_modules|dist|build|.cache|coverage)/**/}*.*' '!*.{log,lock,map,pdf}' '!**/.*' '!package-lock.json'",
@@ -28,7 +28,9 @@
     "@react-pdf/renderer": "^1.6.10",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "typeface-lato": "^0.0.75"
+    "typeface-lato": "^0.0.75",
+    "typeface-martel": "^0.0.72",
+    "typeface-open-sans": "^0.0.75"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.10.4",

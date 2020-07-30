@@ -27,6 +27,10 @@ export const dataEN = {
     subject: 'The Resume Of Chris Lin',
     title: 'Resume',
   },
+  repo: {
+    label: 'Other Ver',
+    link: 'https://github.com/seognil/resume',
+  },
   ...parseMd(fileEN),
 };
 
