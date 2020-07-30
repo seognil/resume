@@ -9,9 +9,9 @@ import { lineToComp } from '#/utils/line-to-pdf';
 
 const s = StyleSheet.create({
   role: {
-    color: '#666',
-    fontSize: 11,
-    marginBottom: 4,
+    color: '#999',
+    fontSize: 12,
+    marginBottom: 2,
   },
   desc: {
     marginBottom: 4,

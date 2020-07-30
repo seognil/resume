@@ -9,7 +9,7 @@ const s = StyleSheet.create({
     fontWeight: 600,
   },
   item: {
-    fontSize: 9,
+    fontSize: 10,
   },
 });
 

@@ -14,8 +14,9 @@ export const Layout: React.FC<{
       size="A4"
       style={{
         padding: 40,
+        paddingBottom: 50,
         fontFamily: 'Open Sans',
-        fontSize: 10,
+        fontSize: 11,
         lineHeight: 1.5,
         fontWeight: 300,
       }}

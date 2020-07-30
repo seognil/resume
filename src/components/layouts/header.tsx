@@ -33,8 +33,7 @@ const s = StyleSheet.create({
   },
   contacts: {
     alignItems: 'flex-end',
-
-    fontSize: 9,
+    fontSize: 8,
     fontWeight: 300,
   },
 });

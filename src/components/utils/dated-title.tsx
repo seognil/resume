@@ -6,15 +6,16 @@ const s = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    fontSize: 11,
+    fontSize: 12,
+    marginBottom: 2,
   },
   title: {
     fontWeight: 600,
-    marginBottom: 4,
   },
   date: {
     fontWeight: 300,
-    color: '#666',
+    color: '#999',
+    fontSize: 11,
   },
 });
 

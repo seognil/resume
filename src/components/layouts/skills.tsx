@@ -4,6 +4,9 @@ import { SectionTitle } from '../utils/section-title';
 import { ContentContainer } from '../utils/content-container';
 
 const s = StyleSheet.create({
+  line: {
+    fontSize: 10,
+  },
   label: {
     fontWeight: 600,
   },
@@ -17,7 +20,7 @@ export const Skills: React.FC<{
     <SectionTitle>{title}</SectionTitle>
     <ContentContainer>
       {skills.map((e, i) => (
-        <Text key={i}>
+        <Text style={s.line} key={i}>
           <Text style={s.label}>{e.label}:&nbsp;&nbsp;</Text>
           <Text>{e.list}</Text>
         </Text>
