@@ -1,0 +1,139 @@
+{
+  "time": "Thu Jul 30 2020 14:30:17 GMT+0800 (China Standard Time)",
+  "meta": {
+    "author": "Chris Lin",
+    "keywords": "resume, front-end, javascript, typescript, developer, engineer",
+    "subject": "The Resume Of Chris Lin",
+    "title": "Resume"
+  },
+  "header": {
+    "name": "Chris Lin",
+    "role": "Front-end Developer",
+    "contacts": [
+      "Shanghai, China",
+      "(+86) 188xxxx5769",
+      "placeholder@gmail.com",
+      {
+        "link": "https://placeholder.com/seognil"
+      },
+      {
+        "link": "https://placeholder.com/"
+      }
+    ]
+  },
+  "edu": {
+    "title": "Education",
+    "degree": "Bachelor of Engineering (B.Eng.) in Computer Science",
+    "college": "Shanghai Institute of Technology",
+    "city": "Shanghai, China",
+    "date": "Sep 2011 - Jun 2015"
+  },
+  "skills": {
+    "title": "Skills",
+    "skills": [
+      {
+        "label": "Languages",
+        "list": "JavaScript(4+ years), TypeScript(1+ years), HTML, CSS"
+      },
+      {
+        "label": "Paradigms",
+        "list": "FP, FRP, OOP, MVVM, TDD, GoF"
+      },
+      {
+        "label": "Stacks",
+        "list": "React, Redux, RxJS, Ramda, TailwindCSS, Style-JSX, Node.js, Webpack, Jest, Cypress, Backbone, Lodash, jQuery, Vanilla, etc."
+      },
+      {
+        "label": "Platforms",
+        "list": "VS Code, Aliyun, GitHub, Npm, Vercel, Netlify"
+      },
+      {
+        "label": "Others",
+        "list": "Git, Shell, Docker"
+      }
+    ]
+  },
+  "works": {
+    "title": "Working Experience",
+    "works": [
+      {
+        "team": "Shanghai 21Epub Digital Technology Co.,Ltd.",
+        "date": "Aug 2017 - Present",
+        "role": "Front-end Engineer at R&D",
+        "desc": "21Epub is a tech company provides code-free website creation.",
+        "tasks": [
+          "Developed an SSR project for production homepage",
+          "Integrated React/Redux for a Backbone/jQuery-based system",
+          "Improved architectures",
+          "Maintained and developed new features for multi projects"
+        ]
+      },
+      {
+        "team": "iDongPin Shanghai",
+        "date": "Spe 2016 - Jul 2017",
+        "role": "Front-end Developer",
+        "desc": "iDongPin is an e-commerce company with b2b frozen food trading platforms",
+        "tasks": ["Developed Web Apps and admin panels"]
+      }
+    ]
+  },
+  "projs": {
+    "title": "Project Experience",
+    "projs": [
+      {
+        "proj": "epub360.com",
+        "date": "Jun 2020 - Present",
+        "tasks": [
+          "Choose front-end stack to rebuild the website with JS SSR technology, and developed some components for the index pages. (**Next.js**, **React**, **Redux**, **TypeScript**)",
+          "Created some style specs and common rules in the project. (**TailwindCSS**, **Styled-JSX**)",
+          "Developed a middleware for error handling and type checking for data fetched from API server (**SWR**, **Joi**, **Sentry**, **loglevel**)",
+          "Deploying production releases with **Aliyun**, **Docker** and **PM2**",
+          "Site: [epub360.com](https://www.epub360.com/)"
+        ]
+      },
+      {
+        "proj": "Epub360 H5 Editor",
+        "date": "Aug 2017 - May 2020",
+        "tasks": [
+          "Developed a Side Bar in the editor which supports multi selecting, grouping, drag-and-drop (**React**, **Redux**, **Ramda**, **Immer**)",
+          "Integrated React/Redux in the Backbone/jQuery-based system for further development, and linked their state managers. (**RxJS**)",
+          "Refactored task runner scripts for multiple projects bundling, deprecated **grunt** and **gulp**. (**TypeScript**, **Node.js**, **fast-glob**)",
+          "Refactored bundling system using **Webpack** and **Babel**, deprecated **require.js**. Added ES6+/TS/React/Vue support for the project. Improved rebuild time from minutes to seconds.",
+          "Developed dozens of features in the early stages, e.g. CSS 3D components, force landscape rendering, performance improving, API data encryption middleware (**JavaScript**, **Backbone**, **Lodash**, **jQuery**)",
+          "Team Sharing, Multi-State Architecture: <https://github.com/seognil-study/multi-systems-demo>",
+          "Team Sharing, Webpack From Scratch: <https://github.com/seognil-study/webpack-playground>"
+        ]
+      },
+      {
+        "proj": "FE Foundation Handbook",
+        "date": "Jul 2019 - Present",
+        "tasks": [
+          "It’s my own version of the \"Front-end Developer Handbook\".",
+          "Written a lot of articles in **Markdown** and demos for sharing front-end development skills to my friends.",
+          "Built with **Vuepress** and hosted by **Vercel**.",
+          "Site: <https://fe.rualc.com/>",
+          "Src: <https://github.com/seognil/fe-foundation>"
+        ]
+      },
+      {
+        "proj": "Leetcode Solutions In TypeScript",
+        "tasks": [
+          "Enjoy leetcode in **TypeScript** locally, auto-compiling to JavaScript for submitting.",
+          "Written test cases and tested my solutions using **Jest**.",
+          "Automation Tooling using **Prettier**, **ESLint**, **Huksy**.",
+          "Created some scripts to refresh my progress in the repo with **doctoc** and **GitHub API**.",
+          "Src: <https://github.com/seognil-study/leetcode>"
+        ]
+      },
+      {
+        "proj": "'type-done' The Npm Package",
+        "tasks": [
+          "A tool about installing missing TypeScript definition packages with one click.",
+          "Developed in **TypeScript**, tested with **Jest**, bundled by **Rollup**, released to **npm** using a tool called release-it.",
+          "Npm: <https://www.npmjs.com/package/type-done>",
+          "Src: <https://github.com/seognil-lab/type-done>"
+        ]
+      }
+    ]
+  }
+}

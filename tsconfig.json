@@ -1,17 +1,14 @@
 {
   "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
     "jsx": "react",
     "esModuleInterop": true,
     "strict": true,
-    "baseUrl": "./",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
     "paths": {
-      "~/*": [
-        "./src/*"
-      ],
+      "#/*": ["./src/*"]
     }
   },
-  "include": [
-    "./src",
-    "./demo",
-  ]
+  "include": ["./src", "./demo"]
 }
