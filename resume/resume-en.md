@@ -21,7 +21,7 @@ Shanghai, China -- Sep 2011 - Jun 2015
 ## Skills
 
 Languages: JavaScript (4+ years), TypeScript (1+ years), HTML, CSS  
-Designs: FP, FRP, OOP, MVVM, TDD, GoF
+Designs: FP, FRP, OOP, MVVM, TDD, GoF  
 Stacks: React, Redux, RxJS, Ramda, TailwindCSS, Style-JSX, Node.js, Webpack, Jest, Cypress, Backbone, Lodash, jQuery, Vanilla, etc.  
 Platforms: VS Code, Aliyun, GitHub, Npm, Vercel, Netlify  
 Others: Git, Shell, Docker

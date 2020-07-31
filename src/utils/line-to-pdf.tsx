@@ -1,14 +1,12 @@
 import * as React from 'react';
 import { Text, StyleSheet } from '@react-pdf/renderer';
 import { BluedLink } from '#/components/utils/blued-link';
+import { useMyState } from './make-store';
 
-const s = StyleSheet.create({
-  bold: {
-    fontWeight: 600,
-  },
-});
-
-const Bold: React.FC = ({ children }) => <Text style={s.bold}>{children}</Text>;
+const Bold: React.FC = ({ children }) => {
+  const s = useMyState();
+  return <Text style={{ fontWeight: s.bold }}>{children}</Text>;
+};
 
 const simpleParseLink = (str: string) => {
   if (/\]\(http/.test(str)) {

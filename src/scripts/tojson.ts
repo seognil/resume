@@ -36,4 +36,24 @@ export const dataEN = {
 
 writeData(dataEN, outputEN);
 
-// * ----------------
+// * ---------------- zh
+
+const fileZH = path.resolve(root, './resume/resume-zh.md');
+const outputZH = path.resolve(root, './src/data/data-zh.json');
+
+export const dataZH = {
+  time: new Date().toString(),
+  meta: {
+    author: '张三',
+    keywords: '简历, 前端, javascript, typescript, 开发, 工程师',
+    subject: '张三的简历',
+    title: '简历',
+  },
+  repo: {
+    label: '其他版本',
+    link: 'https://github.com/seognil/resume',
+  },
+  ...parseMd(fileZH),
+};
+
+writeData(dataZH, outputZH);

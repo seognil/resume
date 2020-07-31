@@ -23,6 +23,13 @@ export const runFontRegister = (fontlist: FontFileList) => {
     OpenSansBolditalic,
     OpenSansExtraBold,
     OpenSansExtraBolditalic,
+
+    SourceHanSansSCExtraLight,
+    SourceHanSansSCLight,
+    SourceHanSansSCNormal,
+    SourceHanSansSCMedium,
+    SourceHanSansSCBold,
+    SourceHanSansSCHeavy,
   } = fontlist;
 
   Font.register({
@@ -51,6 +58,18 @@ export const runFontRegister = (fontlist: FontFileList) => {
       { src: OpenSansBolditalic, fontWeight: 700, fontStyle: 'italic' },
       { src: OpenSansExtraBold, fontWeight: 800, fontStyle: 'normal' },
       { src: OpenSansExtraBolditalic, fontWeight: 800, fontStyle: 'italic' },
+    ],
+  });
+
+  Font.register({
+    family: 'Source Han Sans',
+    fonts: [
+      { src: SourceHanSansSCExtraLight, fontWeight: 200, fontStyle: 'normal' },
+      { src: SourceHanSansSCLight, fontWeight: 300, fontStyle: 'normal' },
+      { src: SourceHanSansSCNormal, fontWeight: 400, fontStyle: 'normal' },
+      { src: SourceHanSansSCMedium, fontWeight: 500, fontStyle: 'normal' },
+      { src: SourceHanSansSCBold, fontWeight: 700, fontStyle: 'normal' },
+      { src: SourceHanSansSCHeavy, fontWeight: 900, fontStyle: 'normal' },
     ],
   });
 };

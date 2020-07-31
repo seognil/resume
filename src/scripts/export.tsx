@@ -2,7 +2,8 @@ import * as React from 'react';
 
 import path from 'path';
 import ReactPDF from '@react-pdf/renderer';
-import { OnePageResumeEn } from '#/components';
+import { OnePageResumeEn } from '#/components/index-en';
+import { OnePageResumeZh } from '#/components/index-zh';
 
 import * as fontlist from '#/fonts/fontlist-for-export';
 import { runFontRegister } from '#/fonts/font-register';
@@ -11,10 +12,14 @@ import { runFontRegister } from '#/fonts/font-register';
 
 runFontRegister(fontlist);
 
-// * ---------------- render
+// * ---------------- render en
 
-const dist = path.resolve(process.cwd(), './resume/resume-en.pdf');
+const distEN = path.resolve(process.cwd(), './resume/resume-en.pdf');
+console.log('export:', distEN);
+ReactPDF.renderToFile(<OnePageResumeEn />, distEN);
 
-console.log('export:', dist);
+// * ---------------- render zh
 
-ReactPDF.renderToFile(<OnePageResumeEn />, dist);
+const distZH = path.resolve(process.cwd(), './resume/resume-zh.pdf');
+console.log('export:', distZH);
+ReactPDF.renderToFile(<OnePageResumeZh />, distZH);

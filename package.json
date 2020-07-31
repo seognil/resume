@@ -4,9 +4,9 @@
     "build:demo": "yarn babel-run demo/scripts/export.tsx",
     "start": "yarn tojson; parcel src/scripts/preview.html",
     "build": "yarn tojson; yarn babel-run src/scripts/export.tsx",
-    "babel-run": "babel-node --extensions='.ts,.tsx'",
     "tojson": "yarn babel-run src/scripts/tojson.ts",
-    "lint": "eslint --fix . && prettier --write '{,!(node_modules|dist|build|.cache|coverage)/**/}*.*' '!*.{log,lock,map,pdf}' '!**/.*' '!package-lock.json'",
+    "babel-run": "babel-node --extensions='.ts,.tsx'",
+    "lint": "eslint --fix . && prettier --write '{,!(node_modules|dist|build|.cache|coverage)/**/}*.*' '!**/*.{log,lock,map,pdf}' '!**/.*' '!package-lock.json'",
     "lint:staged": "lint-staged"
   },
   "lint-staged": {
@@ -28,9 +28,11 @@
     "@react-pdf/renderer": "^1.6.10",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5",
+    "source-han-sans-sc-ttf": "^1.0.0",
     "typeface-lato": "^0.0.75",
-    "typeface-martel": "^0.0.72",
-    "typeface-open-sans": "^0.0.75"
+    "typeface-martel": "^0.0.72"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.10.4",
@@ -46,6 +48,7 @@
     "@types/prettier": "^2.0.2",
     "@types/react": "^16.9.43",
     "@types/react-dom": "^16.9.8",
+    "@types/react-redux": "^7.1.9",
     "@typescript-eslint/eslint-plugin": "^3.7.1",
     "@typescript-eslint/parser": "^3.7.1",
     "babel-node": "^0.0.1-security",

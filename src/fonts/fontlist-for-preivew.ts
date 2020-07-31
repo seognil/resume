@@ -17,6 +17,13 @@ import OpenSansBolditalic from 'typeface-open-sans/files/open-sans-latin-700ital
 import OpenSansExtraBold from 'typeface-open-sans/files/open-sans-latin-800.woff';
 import OpenSansExtraBolditalic from 'typeface-open-sans/files/open-sans-latin-800italic.woff';
 
+import SourceHanSansSCExtraLight from 'source-han-sans-sc-ttf/dist/SourceHanSansSC-ExtraLight.ttf';
+import SourceHanSansSCLight from 'source-han-sans-sc-ttf/dist/SourceHanSansSC-Light.ttf';
+import SourceHanSansSCNormal from 'source-han-sans-sc-ttf/dist/SourceHanSansSC-Normal.ttf';
+import SourceHanSansSCMedium from 'source-han-sans-sc-ttf/dist/SourceHanSansSC-Medium.ttf';
+import SourceHanSansSCBold from 'source-han-sans-sc-ttf/dist/SourceHanSansSC-Bold.ttf';
+import SourceHanSansSCHeavy from 'source-han-sans-sc-ttf/dist/SourceHanSansSC-Heavy.ttf';
+
 export {
   MartelExtra,
   MartelLight,
@@ -35,4 +42,10 @@ export {
   OpenSansBolditalic,
   OpenSansExtraBold,
   OpenSansExtraBolditalic,
+  SourceHanSansSCExtraLight,
+  SourceHanSansSCLight,
+  SourceHanSansSCNormal,
+  SourceHanSansSCMedium,
+  SourceHanSansSCBold,
+  SourceHanSansSCHeavy,
 };

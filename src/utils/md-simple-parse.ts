@@ -61,7 +61,7 @@ const parseSkills = (s: string) => {
   const [l1, ...list] = s.split('\n');
   const title = antiHH(l1);
   const skills = list
-    .map((e) => e.split(/:\s/))
+    .map((e) => e.split(/[:：]\s?/))
     .map(([label, list]) => ({ label, list }));
 
   return { title, skills };

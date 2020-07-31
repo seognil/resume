@@ -33,3 +33,16 @@ export const OpenSansExtraBold =
   './node_modules/typeface-open-sans/files/open-sans-latin-800.woff';
 export const OpenSansExtraBolditalic =
   './node_modules/typeface-open-sans/files/open-sans-latin-800italic.woff';
+
+export const SourceHanSansSCExtraLight =
+  './node_modules/source-han-sans-sc-ttf/dist/SourceHanSansSC-ExtraLight.ttf';
+export const SourceHanSansSCLight =
+  './node_modules/source-han-sans-sc-ttf/dist/SourceHanSansSC-Light.ttf';
+export const SourceHanSansSCNormal =
+  './node_modules/source-han-sans-sc-ttf/dist/SourceHanSansSC-Normal.ttf';
+export const SourceHanSansSCMedium =
+  './node_modules/source-han-sans-sc-ttf/dist/SourceHanSansSC-Medium.ttf';
+export const SourceHanSansSCBold =
+  './node_modules/source-han-sans-sc-ttf/dist/SourceHanSansSC-Bold.ttf';
+export const SourceHanSansSCHeavy =
+  './node_modules/source-han-sans-sc-ttf/dist/SourceHanSansSC-Heavy.ttf';
