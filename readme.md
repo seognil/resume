@@ -16,3 +16,10 @@ Being familiar with TypeScript, React Hooks, Node.js, and has read ECMA-262 spec
 - [EN PDF](./resume/resume-en.pdf)
 - [中文](./resume/resume-zh.md)
 - [中文 PDF](./resume/resume-zh.pdf)
+
+## About This Repo
+
+- Write resume in **Markdown**
+- Parsed to **JSON** with **TypeScript**
+- Layout with **React** Components
+- Exported to **PDF** by **`@react-pdf/renderer`**
