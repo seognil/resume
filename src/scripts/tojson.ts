@@ -44,9 +44,9 @@ const outputZH = path.resolve(root, './src/data/data-zh.json');
 export const dataZH = {
   time: new Date().toString(),
   meta: {
-    author: '张三',
+    author: 'Chen LIN',
     keywords: '简历, 前端, javascript, typescript, 开发, 工程师',
-    subject: '张三的简历',
+    subject: 'Chen LIN 的简历',
     title: '简历',
   },
   repo: {

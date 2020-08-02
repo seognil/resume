@@ -11,14 +11,16 @@ import { Projs } from './layouts/projs';
 import { Provider } from 'react-redux';
 import { createMyStore } from '#/utils/make-store';
 
-export const OnePageResumeEn: React.FC = () => (
+export const ResumeContentEn: React.FC = () => (
   <Provider
     store={createMyStore({
+      lang: 'en',
       font: 'Open Sans',
       fancy: 'Martel',
       weight: 300,
       bold: 600,
       heavy: 800,
+      size: 10,
     })}
   >
     <Layout meta={data.meta}>

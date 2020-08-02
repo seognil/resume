@@ -8,7 +8,7 @@ const createStyle = (s: MyState) =>
       padding: 40,
       paddingBottom: 50,
       fontFamily: s.font,
-      fontSize: 11,
+      fontSize: s.size! + 1,
       lineHeight: 1.5,
       fontWeight: s.weight,
     },

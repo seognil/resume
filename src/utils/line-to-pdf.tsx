@@ -9,9 +9,9 @@ const Bold: React.FC = ({ children }) => {
 };
 
 const simpleParseLink = (str: string) => {
-  if (/\]\(http/.test(str)) {
+  if (/\]\(/.test(str)) {
     return str
-      .replace(/(\[.+?\]\(.+?\))/, '__@@__$1__@@__')
+      .replace(/(\[.+?\]\(.+?\))/g, '__@@__$1__@@__')
       .split('__@@__')
       .map((e, i) => {
         if (i % 2 === 0) return <Text key={i}>{e}</Text>;
@@ -24,7 +24,7 @@ const simpleParseLink = (str: string) => {
       });
   } else if (/\<http/.test(str)) {
     return str
-      .replace(/(<.+?>)/, '__@@__$1__@@__')
+      .replace(/(<.+?>)/g, '__@@__$1__@@__')
       .split('__@@__')
       .map((e, i) => {
         if (i % 2 === 0) return <Text key={i}>{e}</Text>;
@@ -40,10 +40,9 @@ const simpleParseLink = (str: string) => {
   }
 };
 
-export const lineToComp = (str: string) => {
+export const LineToComp: React.FC<{ str: string }> = ({ str }) => {
   const slots = str.split('**').map((e, i) => {
     const Comp = i % 2 === 0 ? Text : Bold;
-
     return <Comp key={i}>{simpleParseLink(e)}</Comp>;
   });
 

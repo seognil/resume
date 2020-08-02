@@ -11,7 +11,7 @@ const createStyle = (s: MyState) =>
       fontWeight: s.bold,
     },
     item: {
-      fontSize: 10,
+      fontSize: s.size,
     },
   });
 

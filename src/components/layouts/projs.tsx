@@ -5,7 +5,7 @@ import { DatedTitle } from '../utils/dated-title';
 import { ListItem } from '../utils/list-item';
 import { ContentContainer } from '../utils/content-container';
 import { Block } from '../utils/block';
-import { lineToComp } from '#/utils/line-to-pdf';
+import { LineToComp } from '#/utils/line-to-pdf';
 
 export const Projs: React.FC<{
   title: string;
@@ -22,7 +22,9 @@ export const Projs: React.FC<{
         <Block key={i}>
           <DatedTitle date={e.date}>{e.proj}</DatedTitle>
           {e.tasks.map((e, i) => (
-            <ListItem key={i}>{lineToComp(e)}</ListItem>
+            <ListItem key={i}>
+              <LineToComp str={e} key={i} />
+            </ListItem>
           ))}
         </Block>
       ))}

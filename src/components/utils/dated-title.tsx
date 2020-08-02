@@ -8,7 +8,7 @@ const createStyle = (s: MyState) =>
       display: 'flex',
       flexDirection: 'row',
       justifyContent: 'space-between',
-      fontSize: 12,
+      fontSize: s.size! + 2,
       marginBottom: 2,
     },
     title: {
@@ -16,7 +16,7 @@ const createStyle = (s: MyState) =>
     },
     date: {
       color: '#999',
-      fontSize: 11,
+      fontSize: s.size! + 1,
     },
   });
 

@@ -1,9 +1,9 @@
 {
-  "time": "Fri Jul 31 2020 17:07:33 GMT+0800 (China Standard Time)",
+  "time": "Sun Aug 02 2020 20:04:35 GMT+0800 (China Standard Time)",
   "meta": {
-    "author": "张三",
+    "author": "Chen LIN",
     "keywords": "简历, 前端, javascript, typescript, 开发, 工程师",
-    "subject": "张三的简历",
+    "subject": "Chen LIN 的简历",
     "title": "简历"
   },
   "repo": {
@@ -11,24 +11,20 @@
     "link": "https://github.com/seognil/resume"
   },
   "header": {
-    "name": "张三",
+    "name": "Chen LIN",
     "role": "前端工程师",
     "contacts": [
       "中国 上海",
-      "(+86) 188xxxx5769",
-      "placeholder@gmail.com",
-      {
-        "link": "https://placeholder.com/seognil"
-      },
-      {
-        "link": "https://placeholder.com/"
-      }
+      "(+86) 175-2164-3403",
+      "[seognil@gmail.com](mailto:seognil@gmail.com)",
+      "<https://github.com/seognil>",
+      "<https://fe.rualc.com/>"
     ]
   },
   "edu": {
     "title": "教育背景",
     "degree": "计算机科学与技术 工学学士",
-    "college": "上海 Placeholder 大学",
+    "college": "上海应用技术大学",
     "city": "中国 上海",
     "date": "2011 年 9 月 - 2015 年 6 月"
   },
@@ -36,24 +32,24 @@
     "title": "技能",
     "skills": [
       {
-        "label": "编程语言",
-        "list": "JavaScript (4+ 年)，TypeScript (1+ 年)，HTML，CSS"
+        "label": "语言",
+        "list": "JavaScript (4+ 年), TypeScript (1+ 年), HTML, CSS"
       },
       {
         "label": "代码设计",
-        "list": "FP，FRP，OOP，MVVM，TDD，GoF"
+        "list": "FP, FRP, OOP, MVVM, TDD, GoF"
       },
       {
         "label": "技术栈",
-        "list": "React，Redux，RxJS，Ramda，TailwindCSS，Style-JSX，Node.js，Webpack，Jest，Cypress，Backbone，Lodash，jQuery，Vanilla，等"
+        "list": "React, Redux, RxJS, Ramda, TailwindCSS, Styled-JSX, Node.js, Webpack, Jest …"
       },
       {
-        "label": "平台",
-        "list": "VS Code，Aliyun，GitHub，Npm，Vercel，Netlify"
+        "label": "开发平台",
+        "list": "VS Code, GitHub, Npm, Aliyun, Vercel"
       },
       {
         "label": "其他",
-        "list": "Git，Shell，Docker"
+        "list": "Git, Shell, Docker"
       }
     ]
   },
@@ -64,19 +60,19 @@
         "team": "上海意派信息科技有限公司",
         "date": "2017 年 8 月 - 至今",
         "role": "前端工程师 研发部门",
-        "desc": "「意派 Epub360」是一家提供页面在线交互设计制作工具的互联网公司",
+        "desc": "「意派 Epub360」是一家提供 页面在线交互设计制作工具 的互联网公司",
         "tasks": [
-          "官网页面 SSR 架构搭建及页面开发",
-          "在 Backbone/jQuery 系统中接入 React/Redux",
-          "架构改进，编写工程化工具",
-          "维护和开发多个项目"
+          "SSR 项目搭建和开发",
+          "将 React/Redux 技术栈接入到一个 **40 万行代码**的 jQuery/Backbone 系统中",
+          "架构改进，性能调优，编写工程化工具",
+          "参与开发和维护多个项目"
         ]
       },
       {
         "team": "上海联廉冰鲜电子商务有限公司",
         "date": "2016 年 9 月 - 2017 年 7 月",
         "role": "前端开发",
-        "desc": "「i 冻品」是一家运营冻品交易平台的电商公司",
+        "desc": "「i 冻品」是一家运营 冻品交易平台 的电商公司",
         "tasks": ["开发电商平台客户端及后台管理界面"]
       }
     ]
@@ -86,12 +82,12 @@
     "projs": [
       {
         "proj": "epub360.com 官网",
-        "date": "2020 年 6 月 - 至今",
+        "date": "2020 年 6 月 - 2020 年 7 月",
         "tasks": [
-          "用 JS 技术栈及 SSR 框架重构网站，开发了一下 UI 组件。（**Next.js**，**React**，**Redux**，**TypeScript**）",
-          "用 **TailwindCSS** 和 **Styled-JSX** 制定样式规范，并编写通用的 CSS 规则。",
-          "为前后端数据接口编写错误处理和类型校验的中间件。（**SWR**，**Joi**，**Sentry**，**loglevel**）",
-          "在生产环境中使用 **Docker** 和 **PM2** 并发布到 **Aliyun** 服务器。",
+          "用**前端 SSR 框架**重构该网站， 开发了一些 UI 组件。 （Next.js, React, Redux, TypeScript）",
+          "借助 TailwindCSS 和 Styled-JSX **制定样式体系规范**， 并编写通用的 CSS 规则。 ",
+          "为前后端数据接口编写错误处理和类型校验的中间件。 ",
+          "生产环境使用 Docker 和 PM2 构建， 并部署到阿里云服务器。 ",
           "网站：[epub360.com](https://www.epub360.com/)"
         ]
       },
@@ -99,42 +95,38 @@
         "proj": "Epub360 H5 编辑器",
         "date": "2017 年 8 月 - 2020 年 5 月",
         "tasks": [
-          "用 **React**、**Redux** 和 **TypeScript** 编写组件。",
-          "项目早期基于旧技术栈开发了大量功能，例如：CSS 3D 组件，播放器强制横屏模式，渲染性能调优，API 数据加密中间层。（**JavaScript**，**Backbone**，**Lodash**，**jQuery**）",
-          "用 **Webpack**、**Babel** 和 **Node.js** 重构了打包系统，增加了对 ES6+/TS/React/Vue 的编译支持，并让重编译时间从分钟级降至秒级。",
-          "组内分享，「多系统状态设计」：<https://github.com/seognil-study/multi-systems-demo>",
-          "组内分享，「Webpack 从零开始」：<https://github.com/seognil-study/webpack-playground>"
+          "用 React、Redux 和 TypeScript 编写新的用户交互组件。 ",
+          "重构打包系统， 增加了对 ES6+/TS/React/Vue 的编译支持， 并**使重编译时间从分钟降至数秒**。 还提供了友好的编译信息 log。 ",
+          "在项目早期， 基于原有技术栈开发了大量功能。 例如：**CSS 3D 组件**， 移动端锁定横屏显示模式， API 数据加密中间件等等。 （JavaScript, Backbone, Lodash, jQuery）",
+          "**团队技术分享：[「多系统设计」](https://github.com/seognil-study/multi-systems-demo)**",
+          "**团队技术分享：[「Webpack 从零开始」](https://github.com/seognil-study/webpack-playground)**"
         ]
       },
       {
         "proj": "前端开发学习指南",
         "date": "2019 年 7 月- 至今",
         "tasks": [
-          "这是一个我自己编写的 \"Front-end Developer Handbook\"",
-          "写了一些文章和 Demo 来和朋友们分享前端开发的技术知识",
-          "用 **Vuepress** 搭建，用 **Vercel** 托管",
-          "网站：<https://fe.rualc.com/>",
-          "源码：<https://github.com/seognil/fe-foundation>"
+          "这是一本我编写的 \"Front-end Developer Handbook\"， 使用 Vuepress 搭建， 并托管在 Vercel 上。 ",
+          "写了一些文章和代码 Demo 来和我的朋友们分享前端开发的技术知识， 并**在社区收获了一些 star**。 ",
+          "[[代码]](https://github.com/seognil/fe-foundation) [[网站]](https://fe.rualc.com/)"
         ]
       },
       {
         "proj": "Leetcode Solutions In TypeScript",
         "tasks": [
-          "目前的进度大致是 **100/1400**",
-          "在本地用 **TypeScript** 刷题，自动编译成 JavaScript 用于提交",
-          "编写测试用例，并用 **Jest** 进行单元测试",
-          "使用了部分工程化工具，例如 **Prettier**、**ESLint** 和 **Huksy**",
-          "写了一个使用 **GitHub API** 的脚本用来在 repo 中展示我的答题进度",
-          "源码：<https://github.com/seognil-study/leetcode>"
+          "在本地用 TypeScript 刷题， 自动编译成 JavaScript 文件用于提交。 ",
+          "编写测试用例并通过 Jest 进行单元测试， **测试覆盖率高达 99%**。 ",
+          "写了一个**使用 GitHub API** 的脚本， 用来统计并在 repo 中展示我的答题进度。 ",
+          "目前 Leetcode 记录的总答题进度为 **169/1537**。 ",
+          "[[代码]](https://github.com/seognil-study/leetcode)"
         ]
       },
       {
         "proj": "一个名为 'type-done' 的 NPM 包",
         "tasks": [
-          "一个小工具，可以一键安装缺失的 TypeScript 类型声明库",
-          "基于 **TypeScript** 和 **Jest** 测试框架开发，通过 **Rollup** 打包。用一个叫做 release-it 的工具发布到 **npm** 上。",
-          "NPM：<https://www.npmjs.com/package/type-done>",
-          "源码：<https://github.com/seognil-lab/type-done>"
+          "写了一个小工具， 用来为项目一键安装缺失的 TypeScript 类型声明库。 ",
+          "基于 TypeScript 和 Jest 开发， 通过 Rollup 打包。 通过一个名为 release-it 的工具**发布到了 npm 上**。 ",
+          "[[代码]](https://github.com/seognil-lab/type-done) [[NPM]](https://www.npmjs.com/package/type-done)"
         ]
       }
     ]

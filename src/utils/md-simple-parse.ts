@@ -38,9 +38,7 @@ const parseHeader = (s: string) => {
   const [l1, l2, ...list] = s.split('\n');
   const name = antiHH(l1);
   const role = antiBB(l2);
-  const contacts = antiList(list).map((e) =>
-    e.startsWith('<') ? { link: e.slice(1, -1) } : e,
-  );
+  const contacts = antiList(list);
   return { name, role, contacts };
 };
 
@@ -62,7 +60,7 @@ const parseSkills = (s: string) => {
   const title = antiHH(l1);
   const skills = list
     .map((e) => e.split(/[:：]\s?/))
-    .map(([label, list]) => ({ label, list }));
+    .map(([label, list]) => ({ label: label.replace('- ', ''), list }));
 
   return { title, skills };
 };
@@ -88,7 +86,7 @@ const parseWorks = (s: string) => {
 const parseSingleProj = (s: string) => {
   const [l1, ...list] = s.split('\n');
   const [proj, date] = splitDatedHead(l1);
-  const tasks = antiList(list);
+  const tasks = antiList(list).map((e) => e.replace(/([，。])/g, '$1 '));
   return { proj, date, tasks };
 };
 

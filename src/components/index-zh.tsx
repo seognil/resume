@@ -10,13 +10,15 @@ import { Projs } from './layouts/projs';
 import { Provider } from 'react-redux';
 import { createMyStore } from '#/utils/make-store';
 
-export const OnePageResumeZh: React.FC = () => (
+export const ResumeContentZh: React.FC = () => (
   <Provider
     store={createMyStore({
+      lang: 'zh',
       font: 'Source Han Sans',
       weight: 300,
       bold: 500,
       heavy: 600,
+      size: 10,
     })}
   >
     <Layout meta={data.meta}>

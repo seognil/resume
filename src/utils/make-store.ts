@@ -2,11 +2,13 @@ import { createStore } from 'redux';
 import { useSelector } from 'react-redux';
 
 export type MyState = {
+  lang?: 'zh' | 'en';
   fancy?: string;
   font?: string;
   heavy?: number;
   bold?: number;
   weight?: number;
+  size?: number;
 };
 
 type Action = { type: string; p: MyState };

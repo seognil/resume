@@ -7,7 +7,7 @@ import { MyState, useMyState } from '#/utils/make-store';
 const createStyle = (s: MyState) =>
   StyleSheet.create({
     line: {
-      fontSize: 10,
+      fontSize: s.size,
     },
     label: {
       fontWeight: s.bold,

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { View, Text, StyleSheet } from '@react-pdf/renderer';
 import { BluedLink } from '../utils/blued-link';
 import { useMyState, MyState } from '#/utils/make-store';
+import { LineToComp } from '#/utils/line-to-pdf';
 
 const createStyle = (s: MyState) =>
   StyleSheet.create({
@@ -30,11 +31,11 @@ const createStyle = (s: MyState) =>
     repo: {
       display: 'flex',
       flexDirection: 'row',
-      fontSize: 10,
+      fontSize: s.size,
     },
     contacts: {
       alignItems: 'flex-end',
-      fontSize: 8,
+      fontSize: 9,
     },
   });
 
@@ -42,7 +43,7 @@ export const Header: React.FC<{
   name: string;
   role: string;
   repo: { label: string; link: string };
-  contacts: (string | { link: string })[];
+  contacts: string[];
 }> = ({ name, role, repo, contacts }) => {
   const s = createStyle(useMyState());
   return (
@@ -56,15 +57,9 @@ export const Header: React.FC<{
         </View>
       </View>
       <View style={s.contacts}>
-        {contacts.map((e, i) =>
-          typeof e === 'string' ? (
-            <Text key={i}>{e}</Text>
-          ) : (
-            <BluedLink src={e.link} key={i}>
-              {e.link}
-            </BluedLink>
-          ),
-        )}
+        {contacts.map((e, i) => (
+          <LineToComp str={e} key={i} />
+        ))}
       </View>
     </View>
   );
