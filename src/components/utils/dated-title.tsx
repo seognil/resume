@@ -3,7 +3,7 @@ import { Text, View } from '@react-pdf/renderer';
 import React from 'react';
 
 const creator: Creator = (s) => ({
-  line: {
+  flex: {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -25,7 +25,7 @@ export const DatedTitle: React.FC<{
   const s = useCreateStyles(creator);
 
   return (
-    <View style={s.line}>
+    <View style={s.flex}>
       <Text style={s.title}>{children}</Text>
       {date && <Text style={s.date}>{date}</Text>}
     </View>

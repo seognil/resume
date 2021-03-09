@@ -18,7 +18,7 @@ const creator: Creator = (s) => ({
     backgroundColor: 'white',
     paddingRight: 10,
   },
-  line: {
+  strokeLine: {
     flexGrow: 1,
     borderTop: 0.5,
     borderColor: '#aaa',
@@ -33,7 +33,7 @@ export const SectionTitle: React.FC = ({ children }) => {
 
   return (
     <View style={s.container}>
-      <View style={s.line} />
+      <View style={s.strokeLine} />
       <Text style={s.title}>{children}</Text>
     </View>
   );

@@ -11,7 +11,7 @@ export type CommonStyles = {
   size?: number;
 };
 
-export const StylesContext = createContext<CommonStyles>({});
+export const CommonStylesContext = createContext<CommonStyles>({});
 
 export const createCommonStyles = (s: CommonStyles = {}) => {
   s.fancy = s.fancy ?? s.font;
@@ -23,8 +23,6 @@ export const createCommonStyles = (s: CommonStyles = {}) => {
 
 export type Creator = (s: CommonStyles) => ReactPDF.Styles;
 
-export const useCommonStyles = () => useContext(StylesContext);
-
 export const useCreateStyles = (
   creator: (s: CommonStyles) => ReactPDF.Styles,
-) => StyleSheet.create(creator(useCommonStyles()));
+) => StyleSheet.create(creator(useContext(CommonStylesContext)));

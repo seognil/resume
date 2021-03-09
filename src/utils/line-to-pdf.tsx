@@ -1,11 +1,12 @@
 import { BluedLink } from '#/components/utils/blued-link';
 import { Text } from '@react-pdf/renderer';
 import React from 'react';
-import { useCommonStyles } from './common-styles';
+import { useCreateStyles } from './common-styles';
 
 const Bold: React.FC = ({ children }) => {
-  const cs = useCommonStyles();
-  return <Text style={{ fontWeight: cs.bold }}>{children}</Text>;
+  const s = useCreateStyles((s) => ({ boldFont: { fontWeight: s.bold } }));
+
+  return <Text style={s.boldFont}>{children}</Text>;
 };
 
 const simpleParseLink = (str: string) => {

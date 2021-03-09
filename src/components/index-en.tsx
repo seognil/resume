@@ -1,5 +1,5 @@
 import data from '#/data/data-en.json';
-import { createCommonStyles, StylesContext } from '#/utils/common-styles';
+import { CommonStylesContext, createCommonStyles } from '#/utils/common-styles';
 import React from 'react';
 import { Edu } from './layouts/edu';
 import { Header } from './layouts/header';
@@ -9,7 +9,7 @@ import { Skills } from './layouts/skills';
 import { Works } from './layouts/works';
 
 export const ResumeContentEn: React.FC = () => (
-  <StylesContext.Provider
+  <CommonStylesContext.Provider
     value={createCommonStyles({
       lang: 'en',
       font: 'Open Sans',
@@ -27,5 +27,5 @@ export const ResumeContentEn: React.FC = () => (
       <Works {...data.works} />
       <Projs {...data.projs} />
     </Layout>
-  </StylesContext.Provider>
+  </CommonStylesContext.Provider>
 );
