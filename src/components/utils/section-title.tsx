@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { View, Text, StyleSheet } from '@react-pdf/renderer';
 import { MyState, useMyState } from '#/utils/make-store';
 

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import data from '#/data/data-zh.json';
 import { Layout } from './layouts/layout';
 import { Header } from './layouts/header';

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { View, Text } from '@react-pdf/renderer';
 import { SectionTitle } from '../utils/section-title';
 import { DatedTitle } from '../utils/dated-title';

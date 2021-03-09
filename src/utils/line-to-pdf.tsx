@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Text, StyleSheet } from '@react-pdf/renderer';
 import { BluedLink } from '#/components/utils/blued-link';
 import { useMyState } from './make-store';

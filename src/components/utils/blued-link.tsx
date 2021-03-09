@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Link } from '@react-pdf/renderer';
 
 export const BluedLink: React.FC<{ src: string }> = ({ children, src }) => (
