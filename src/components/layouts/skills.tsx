@@ -1,30 +1,30 @@
-import * as React from 'react';
-import { View, Text, StyleSheet } from '@react-pdf/renderer';
-import { SectionTitle } from '../utils/section-title';
+import { Creator, useCreateStyles } from '#/utils/common-styles';
+import { Text, View } from '@react-pdf/renderer';
+import React, { FC } from 'react';
 import { ContentContainer } from '../utils/content-container';
-import { MyState, useMyState } from '#/utils/make-store';
+import { SectionTitle } from '../utils/section-title';
 
-const createStyle = (s: MyState) =>
-  StyleSheet.create({
-    line: {
-      fontSize: s.size,
-    },
-    label: {
-      fontWeight: s.bold,
-    },
-  });
+const creator: Creator = (s) => ({
+  inline: {
+    fontSize: s.size,
+  },
+  label: {
+    fontWeight: s.bold,
+  },
+});
 
-export const Skills: React.FC<{
+export const Skills: FC<{
   title: string;
   skills: { label: string; list: string }[];
 }> = ({ title, skills }) => {
-  const s = createStyle(useMyState());
+  const s = useCreateStyles(creator);
+
   return (
     <View>
       <SectionTitle>{title}</SectionTitle>
       <ContentContainer>
         {skills.map((e, i) => (
-          <Text style={s.line} key={i}>
+          <Text style={s.inline} key={i}>
             <Text style={s.label}>{e.label}:&nbsp;&nbsp;</Text>
             <Text>{e.list}</Text>
           </Text>

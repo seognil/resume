@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { FC } from 'react';
 import ReactDOM from 'react-dom';
 import { PDFViewer } from '@react-pdf/renderer';
 import { DemoComp } from '../components';

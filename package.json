@@ -2,65 +2,55 @@
   "scripts": {
     "start:demo": "parcel demo/scripts/preview.html",
     "build:demo": "yarn babel-run demo/scripts/export.tsx",
-    "start": "yarn tojson; parcel src/scripts/preview.html",
-    "build": "yarn tojson; yarn babel-run src/scripts/export.tsx",
+    "start": "yarn tojson & parcel src/scripts/preview.html",
+    "build": "yarn tojson & yarn babel-run src/scripts/export.tsx",
     "tojson": "yarn babel-run src/scripts/tojson.ts",
     "babel-run": "babel-node --extensions='.ts,.tsx'",
     "lint": "eslint --fix . && prettier --write '{,!(node_modules|dist|build|.cache|coverage)/**/}*.*' '!**/*.{log,lock,map,pdf}' '!**/.*' '!package-lock.json'",
-    "lint:staged": "lint-staged"
+    "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{ts,js,json}": [
+    "*.{ts,tsx,js,jsx,json}": [
       "prettier --write",
       "eslint --fix"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint:staged",
-      "pre-push": "npm run lint:staged"
-    }
   },
   "alias": {
     "#": "./src"
   },
   "dependencies": {
-    "@react-pdf/renderer": "^1.6.10",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-redux": "^7.2.1",
-    "redux": "^4.0.5",
+    "@react-pdf/renderer": "^1.6.13",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "source-han-sans-sc-ttf": "^1.0.0",
-    "typeface-lato": "^0.0.75",
-    "typeface-martel": "^0.0.72",
-    "typeface-open-sans": "^0.0.75"
+    "typeface-lato": "^1.1.13",
+    "typeface-martel": "^1.1.13",
+    "typeface-open-sans": "^1.1.13"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.10.4",
-    "@babel/plugin-transform-runtime": "^7.11.0",
-    "@babel/preset-env": "^7.11.0",
-    "@babel/preset-react": "^7.10.4",
-    "@babel/preset-typescript": "^7.10.4",
-    "@types/babel__plugin-transform-runtime": "^7.9.0",
-    "@types/babel__preset-env": "^7.9.0",
-    "@types/eslint": "^7.2.0",
-    "@types/fs-extra": "^9.0.1",
-    "@types/node": "^14.0.27",
-    "@types/prettier": "^2.0.2",
-    "@types/react": "^16.9.44",
-    "@types/react-dom": "^16.9.8",
-    "@types/react-redux": "^7.1.9",
-    "@typescript-eslint/eslint-plugin": "^3.7.1",
-    "@typescript-eslint/parser": "^3.7.1",
-    "babel-node": "^0.0.1-security",
-    "babel-plugin-module-resolver": "^4.0.0",
-    "eslint": "^7.6.0",
-    "eslint-plugin-react": "^7.20.5",
-    "fs-extra": "^9.0.1",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
-    "parcel": "^1.12.4",
-    "prettier": "^2.0.5",
-    "typescript": "^3.9.7"
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.10",
+    "@babel/preset-env": "7.13.8",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/babel__core": "^7.1.12",
+    "@types/babel__preset-env": "^7.9.1",
+    "@types/eslint": "^7.2.7",
+    "@types/fs-extra": "^9.0.8",
+    "@types/node": "^14.14.32",
+    "@types/prettier": "^2.2.2",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "eslint": "^7.21.0",
+    "eslint-plugin-react": "^7.22.0",
+    "fs-extra": "^9.1.0",
+    "husky": "^5.1.3",
+    "lint-staged": "^10.5.4",
+    "parcel": "1.12.3",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.3"
   }
 }

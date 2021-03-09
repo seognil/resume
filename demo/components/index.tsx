@@ -1,7 +1,7 @@
-import * as React from 'react';
+import React, { FC } from 'react';
 import { Document, Page, Text } from '@react-pdf/renderer';
 
-export const DemoComp: React.FC = () => (
+export const DemoComp: FC = () => (
   <Document author="" keywords="" subject="" title="">
     <Page size="A4">
       <Text

@@ -1,11 +1,12 @@
-import * as React from 'react';
-import { View, Text, StyleSheet } from '@react-pdf/renderer';
-import { SectionTitle } from '../utils/section-title';
-import { DatedTitle } from '../utils/dated-title';
+import { Creator, useCreateStyles } from '#/utils/common-styles';
+import { Text, View } from '@react-pdf/renderer';
+import React, { FC } from 'react';
 import { ContentContainer } from '../utils/content-container';
+import { DatedTitle } from '../utils/dated-title';
+import { SectionTitle } from '../utils/section-title';
 
-const s = StyleSheet.create({
-  line: {
+const creator: Creator = (s) => ({
+  flex: {
     display: 'flex',
     flexDirection: 'row',
   },
@@ -15,21 +16,26 @@ const s = StyleSheet.create({
   },
 });
 
-export const Edu: React.FC<{
+export const Edu: FC<{
   title: string;
   degree: string;
   college: string;
   city: string;
   date: string;
-}> = ({ title, degree, college, city, date }) => (
-  <View>
-    <SectionTitle>{title}</SectionTitle>
-    <ContentContainer>
-      <DatedTitle date={date}>{degree}</DatedTitle>
-      <View style={s.line}>
-        <Text>{college}</Text>
-        <Text style={s.city}>{city}</Text>
-      </View>
-    </ContentContainer>
-  </View>
-);
+}> = ({ title, degree, college, city, date }) => {
+  const s = useCreateStyles(creator);
+
+  return (
+    <View>
+      <SectionTitle>{title}</SectionTitle>
+
+      <ContentContainer>
+        <DatedTitle date={date}>{degree}</DatedTitle>
+        <View style={s.flex}>
+          <Text>{college}</Text>
+          <Text style={s.city}>{city}</Text>
+        </View>
+      </ContentContainer>
+    </View>
+  );
+};

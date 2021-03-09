@@ -28,7 +28,7 @@ const splitFistLine = (s: string) => [
 ];
 
 const splitDatedHead = (s: string) => {
-  const [title, date] = antiHH(s).split(/(?=[（(])/);
+  const [title, date] = antiHH(s).split(/(?=[(])/);
   return [title.trim(), date?.replace(/[（(]/, '').replace(/[)）]/, '')];
 };
 

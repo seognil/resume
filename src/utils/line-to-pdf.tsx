@@ -1,11 +1,12 @@
-import * as React from 'react';
-import { Text, StyleSheet } from '@react-pdf/renderer';
 import { BluedLink } from '#/components/utils/blued-link';
-import { useMyState } from './make-store';
+import { Text } from '@react-pdf/renderer';
+import React, { FC } from 'react';
+import { useCreateStyles } from './common-styles';
 
-const Bold: React.FC = ({ children }) => {
-  const s = useMyState();
-  return <Text style={{ fontWeight: s.bold }}>{children}</Text>;
+const Bold: FC = ({ children }) => {
+  const s = useCreateStyles((s) => ({ boldFont: { fontWeight: s.bold } }));
+
+  return <Text style={s.boldFont}>{children}</Text>;
 };
 
 const simpleParseLink = (str: string) => {
@@ -40,7 +41,7 @@ const simpleParseLink = (str: string) => {
   }
 };
 
-export const LineToComp: React.FC<{ str: string }> = ({ str }) => {
+export const LineToComp: FC<{ str: string }> = ({ str }) => {
   const slots = str.split('**').map((e, i) => {
     const Comp = i % 2 === 0 ? Text : Bold;
     return <Comp key={i}>{simpleParseLink(e)}</Comp>;

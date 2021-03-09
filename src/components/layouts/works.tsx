@@ -1,26 +1,25 @@
-import * as React from 'react';
-import { View, Text, StyleSheet } from '@react-pdf/renderer';
-import { SectionTitle } from '../utils/section-title';
+import { Creator, useCreateStyles } from '#/utils/common-styles';
+import { LineToComp } from '#/utils/line-to-pdf';
+import { Text, View } from '@react-pdf/renderer';
+import React, { FC } from 'react';
+import { Block } from '../utils/block';
+import { ContentContainer } from '../utils/content-container';
 import { DatedTitle } from '../utils/dated-title';
 import { ListItem } from '../utils/list-item';
-import { ContentContainer } from '../utils/content-container';
-import { Block } from '../utils/block';
-import { LineToComp } from '#/utils/line-to-pdf';
-import { MyState, useMyState } from '#/utils/make-store';
+import { SectionTitle } from '../utils/section-title';
 
-const createStyle = (s: MyState) =>
-  StyleSheet.create({
-    role: {
-      color: '#999',
-      fontSize: s.size! + 2,
-      marginBottom: 2,
-    },
-    desc: {
-      marginBottom: 4,
-    },
-  });
+const creator: Creator = (s) => ({
+  role: {
+    color: '#999',
+    fontSize: s.size! + 2,
+    marginBottom: 2,
+  },
+  desc: {
+    marginBottom: 4,
+  },
+});
 
-export const Works: React.FC<{
+export const Works: FC<{
   title: string;
   works: {
     team: string;
@@ -30,16 +29,21 @@ export const Works: React.FC<{
     tasks: string[];
   }[];
 }> = ({ title, works }) => {
-  const s = createStyle(useMyState());
+  const s = useCreateStyles(creator);
+
   return (
     <View>
       <SectionTitle>{title}</SectionTitle>
+
       <ContentContainer>
         {works.map((e, i) => (
           <Block key={i}>
             <DatedTitle date={e.date}>{e.team}</DatedTitle>
+
             <Text style={s.role}>{e.role}</Text>
+
             <Text style={s.desc}>{e.desc}</Text>
+
             {e.tasks.map((e, i) => (
               <ListItem key={i}>
                 <LineToComp str={e} key={i} />

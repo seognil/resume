@@ -1,11 +1,10 @@
-import * as React from 'react';
-import ReactDOM from 'react-dom';
-import { PDFViewer } from '@react-pdf/renderer';
 import { ResumeContentEn } from '#/components/index-en';
 import { ResumeContentZh } from '#/components/index-zh';
-
-import * as fontlist from '#/fonts/fontlist-for-preivew';
 import { runFontRegister } from '#/fonts/font-register';
+import * as fontlist from '#/fonts/fontlist-for-preivew';
+import { PDFViewer } from '@react-pdf/renderer';
+import React, { FC } from 'react';
+import ReactDOM from 'react-dom';
 
 // * ---------------- font
 
@@ -15,6 +14,8 @@ runFontRegister(fontlist);
 // * ---------------- render
 
 let WhichContent;
+
+[ResumeContentZh, ResumeContentEn];
 
 WhichContent = ResumeContentZh;
 // WhichContent = ResumeContentEn;

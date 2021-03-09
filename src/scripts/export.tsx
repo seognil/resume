@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { FC } from 'react';
 
 import path from 'path';
 import ReactPDF from '@react-pdf/renderer';
