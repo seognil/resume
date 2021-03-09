@@ -1,11 +1,11 @@
+import { LineToComp } from '#/utils/line-to-pdf';
+import { View } from '@react-pdf/renderer';
 import React from 'react';
-import { View, Text } from '@react-pdf/renderer';
-import { SectionTitle } from '../utils/section-title';
+import { Block } from '../utils/block';
+import { ContentContainer } from '../utils/content-container';
 import { DatedTitle } from '../utils/dated-title';
 import { ListItem } from '../utils/list-item';
-import { ContentContainer } from '../utils/content-container';
-import { Block } from '../utils/block';
-import { LineToComp } from '#/utils/line-to-pdf';
+import { SectionTitle } from '../utils/section-title';
 
 export const Projs: React.FC<{
   title: string;
@@ -17,10 +17,12 @@ export const Projs: React.FC<{
 }> = ({ title, projs }) => (
   <View>
     <SectionTitle>{title}</SectionTitle>
+
     <ContentContainer>
       {projs.map((e, i) => (
         <Block key={i}>
           <DatedTitle date={e.date}>{e.proj}</DatedTitle>
+
           {e.tasks.map((e, i) => (
             <ListItem key={i}>
               <LineToComp str={e} key={i} />

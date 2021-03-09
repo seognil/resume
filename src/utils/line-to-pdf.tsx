@@ -4,8 +4,8 @@ import React from 'react';
 import { useCommonStyles } from './common-styles';
 
 const Bold: React.FC = ({ children }) => {
-  const s = useCommonStyles();
-  return <Text style={{ fontWeight: s.bold }}>{children}</Text>;
+  const cs = useCommonStyles();
+  return <Text style={{ fontWeight: cs.bold }}>{children}</Text>;
 };
 
 const simpleParseLink = (str: string) => {

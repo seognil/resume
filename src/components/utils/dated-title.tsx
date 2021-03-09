@@ -23,6 +23,7 @@ export const DatedTitle: React.FC<{
   date?: string;
 }> = ({ date, children }) => {
   const s = useCreateStyles(creator);
+
   return (
     <View style={s.line}>
       <Text style={s.title}>{children}</Text>

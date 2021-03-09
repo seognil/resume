@@ -30,6 +30,7 @@ const creator: Creator = (s) => ({
 
 export const SectionTitle: React.FC = ({ children }) => {
   const s = useCreateStyles(creator);
+
   return (
     <View style={s.container}>
       <View style={s.line} />

@@ -45,6 +45,7 @@ export const Header: React.FC<{
   contacts: string[];
 }> = ({ name, role, repo, contacts }) => {
   const s = useCreateStyles(creator);
+
   return (
     <View style={s.header}>
       <View>
@@ -55,6 +56,7 @@ export const Header: React.FC<{
           <BluedLink src={repo.link}>{repo.link}</BluedLink>
         </View>
       </View>
+
       <View style={s.contacts}>
         {contacts.map((e, i) => (
           <LineToComp str={e} key={i} />

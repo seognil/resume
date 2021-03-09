@@ -1,23 +1,22 @@
-import { Creator, useCreateStyles } from '#/utils/common-styles';
+import { useCreateStyles } from '#/utils/common-styles';
 import { Text, View } from '@react-pdf/renderer';
 import React from 'react';
 import { ContentContainer } from '../utils/content-container';
 import { SectionTitle } from '../utils/section-title';
 
-const creator: Creator = (s) => ({
-  line: {
-    fontSize: s.size,
-  },
-  label: {
-    fontWeight: s.bold,
-  },
-});
-
 export const Skills: React.FC<{
   title: string;
   skills: { label: string; list: string }[];
 }> = ({ title, skills }) => {
-  const s = useCreateStyles(creator);
+  const s = useCreateStyles((s) => ({
+    line: {
+      fontSize: s.size,
+    },
+    label: {
+      fontWeight: s.bold,
+    },
+  }));
+
   return (
     <View>
       <SectionTitle>{title}</SectionTitle>

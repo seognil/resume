@@ -30,15 +30,20 @@ export const Works: React.FC<{
   }[];
 }> = ({ title, works }) => {
   const s = useCreateStyles(creator);
+
   return (
     <View>
       <SectionTitle>{title}</SectionTitle>
+
       <ContentContainer>
         {works.map((e, i) => (
           <Block key={i}>
             <DatedTitle date={e.date}>{e.team}</DatedTitle>
+
             <Text style={s.role}>{e.role}</Text>
+
             <Text style={s.desc}>{e.desc}</Text>
+
             {e.tasks.map((e, i) => (
               <ListItem key={i}>
                 <LineToComp str={e} key={i} />

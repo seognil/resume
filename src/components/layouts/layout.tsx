@@ -30,10 +30,12 @@ export const Layout: React.FC<{
   };
 }> = ({ children, meta }) => {
   const s = useCreateStyles(creator);
+
   return (
     <Document {...meta}>
       <Page size="A4" style={s.page}>
         <View>{children}</View>
+
         <Text
           style={s.footer}
           render={({ pageNumber, totalPages }) =>
