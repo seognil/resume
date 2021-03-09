@@ -1,6 +1,6 @@
 import { Creator, useCreateStyles } from '#/utils/common-styles';
 import { Document, Page, Text, View } from '@react-pdf/renderer';
-import React from 'react';
+import React, { FC } from 'react';
 
 const creator: Creator = (s) => ({
   page: {
@@ -21,7 +21,7 @@ const creator: Creator = (s) => ({
   },
 });
 
-export const Layout: React.FC<{
+export const Layout: FC<{
   meta: {
     author: string;
     keywords: string;

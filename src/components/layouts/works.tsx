@@ -1,7 +1,7 @@
 import { Creator, useCreateStyles } from '#/utils/common-styles';
 import { LineToComp } from '#/utils/line-to-pdf';
 import { Text, View } from '@react-pdf/renderer';
-import React from 'react';
+import React, { FC } from 'react';
 import { Block } from '../utils/block';
 import { ContentContainer } from '../utils/content-container';
 import { DatedTitle } from '../utils/dated-title';
@@ -19,7 +19,7 @@ const creator: Creator = (s) => ({
   },
 });
 
-export const Works: React.FC<{
+export const Works: FC<{
   title: string;
   works: {
     team: string;

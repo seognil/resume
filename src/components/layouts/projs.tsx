@@ -1,13 +1,13 @@
 import { LineToComp } from '#/utils/line-to-pdf';
 import { View } from '@react-pdf/renderer';
-import React from 'react';
+import React, { FC } from 'react';
 import { Block } from '../utils/block';
 import { ContentContainer } from '../utils/content-container';
 import { DatedTitle } from '../utils/dated-title';
 import { ListItem } from '../utils/list-item';
 import { SectionTitle } from '../utils/section-title';
 
-export const Projs: React.FC<{
+export const Projs: FC<{
   title: string;
   projs: {
     proj: string;

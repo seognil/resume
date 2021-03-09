@@ -1,7 +1,7 @@
 import { Creator, useCreateStyles } from '#/utils/common-styles';
 import { LineToComp } from '#/utils/line-to-pdf';
 import { Text, View } from '@react-pdf/renderer';
-import React from 'react';
+import React, { FC } from 'react';
 import { BluedLink } from '../utils/blued-link';
 
 const creator: Creator = (s) => ({
@@ -38,7 +38,7 @@ const creator: Creator = (s) => ({
   },
 });
 
-export const Header: React.FC<{
+export const Header: FC<{
   name: string;
   role: string;
   repo: { label: string; link: string };

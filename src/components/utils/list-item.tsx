@@ -1,6 +1,6 @@
 import { Creator, useCreateStyles } from '#/utils/common-styles';
 import { Text } from '@react-pdf/renderer';
-import React from 'react';
+import React, { FC } from 'react';
 
 const creator: Creator = (s) => ({
   inline: {
@@ -14,7 +14,7 @@ const creator: Creator = (s) => ({
   },
 });
 
-export const ListItem: React.FC = ({ children }) => {
+export const ListItem: FC = ({ children }) => {
   const s = useCreateStyles(creator);
 
   return (

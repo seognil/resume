@@ -3,7 +3,7 @@ import { ResumeContentZh } from '#/components/index-zh';
 import { runFontRegister } from '#/fonts/font-register';
 import * as fontlist from '#/fonts/fontlist-for-preivew';
 import { PDFViewer } from '@react-pdf/renderer';
-import React from 'react';
+import React, { FC } from 'react';
 import ReactDOM from 'react-dom';
 
 // * ---------------- font

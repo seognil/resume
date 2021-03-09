@@ -1,6 +1,6 @@
 import { Creator, useCreateStyles } from '#/utils/common-styles';
 import { Text, View } from '@react-pdf/renderer';
-import React from 'react';
+import React, { FC } from 'react';
 import { ContentContainer } from '../utils/content-container';
 import { SectionTitle } from '../utils/section-title';
 
@@ -13,7 +13,7 @@ const creator: Creator = (s) => ({
   },
 });
 
-export const Skills: React.FC<{
+export const Skills: FC<{
   title: string;
   skills: { label: string; list: string }[];
 }> = ({ title, skills }) => {

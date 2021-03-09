@@ -1,6 +1,6 @@
 import { Creator, useCreateStyles } from '#/utils/common-styles';
 import { Text, View } from '@react-pdf/renderer';
-import React from 'react';
+import React, { FC } from 'react';
 
 const creator: Creator = (s) => ({
   container: {
@@ -28,7 +28,7 @@ const creator: Creator = (s) => ({
   },
 });
 
-export const SectionTitle: React.FC = ({ children }) => {
+export const SectionTitle: FC = ({ children }) => {
   const s = useCreateStyles(creator);
 
   return (

@@ -1,6 +1,6 @@
 import { View } from '@react-pdf/renderer';
-import React from 'react';
+import React, { FC } from 'react';
 
-export const Block: React.FC = ({ children }) => (
+export const Block: FC = ({ children }) => (
   <View style={{ marginBottom: 10 }}>{children}</View>
 );

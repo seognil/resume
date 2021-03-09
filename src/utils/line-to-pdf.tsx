@@ -1,9 +1,9 @@
 import { BluedLink } from '#/components/utils/blued-link';
 import { Text } from '@react-pdf/renderer';
-import React from 'react';
+import React, { FC } from 'react';
 import { useCreateStyles } from './common-styles';
 
-const Bold: React.FC = ({ children }) => {
+const Bold: FC = ({ children }) => {
   const s = useCreateStyles((s) => ({ boldFont: { fontWeight: s.bold } }));
 
   return <Text style={s.boldFont}>{children}</Text>;
@@ -41,7 +41,7 @@ const simpleParseLink = (str: string) => {
   }
 };
 
-export const LineToComp: React.FC<{ str: string }> = ({ str }) => {
+export const LineToComp: FC<{ str: string }> = ({ str }) => {
   const slots = str.split('**').map((e, i) => {
     const Comp = i % 2 === 0 ? Text : Bold;
     return <Comp key={i}>{simpleParseLink(e)}</Comp>;

@@ -1,6 +1,6 @@
 import data from '#/data/data-en.json';
 import { CommonStylesContext, createCommonStyles } from '#/utils/common-styles';
-import React from 'react';
+import React, { FC } from 'react';
 import { Edu } from './layouts/edu';
 import { Header } from './layouts/header';
 import { Layout } from './layouts/layout';
@@ -8,7 +8,7 @@ import { Projs } from './layouts/projs';
 import { Skills } from './layouts/skills';
 import { Works } from './layouts/works';
 
-export const ResumeContentEn: React.FC = () => (
+export const ResumeContentEn: FC = () => (
   <CommonStylesContext.Provider
     value={createCommonStyles({
       lang: 'en',

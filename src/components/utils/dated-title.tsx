@@ -1,6 +1,6 @@
 import { Creator, useCreateStyles } from '#/utils/common-styles';
 import { Text, View } from '@react-pdf/renderer';
-import React from 'react';
+import React, { FC } from 'react';
 
 const creator: Creator = (s) => ({
   flex: {
@@ -19,7 +19,7 @@ const creator: Creator = (s) => ({
   },
 });
 
-export const DatedTitle: React.FC<{
+export const DatedTitle: FC<{
   date?: string;
 }> = ({ date, children }) => {
   const s = useCreateStyles(creator);

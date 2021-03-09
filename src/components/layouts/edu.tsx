@@ -1,6 +1,6 @@
 import { Creator, useCreateStyles } from '#/utils/common-styles';
 import { Text, View } from '@react-pdf/renderer';
-import React from 'react';
+import React, { FC } from 'react';
 import { ContentContainer } from '../utils/content-container';
 import { DatedTitle } from '../utils/dated-title';
 import { SectionTitle } from '../utils/section-title';
@@ -16,7 +16,7 @@ const creator: Creator = (s) => ({
   },
 });
 
-export const Edu: React.FC<{
+export const Edu: FC<{
   title: string;
   degree: string;
   college: string;
