@@ -1,13 +1,14 @@
+import { useCreateStyles } from '#/utils/common-styles';
+import { View } from '@react-pdf/renderer';
 import React from 'react';
-import { View, StyleSheet } from '@react-pdf/renderer';
 
-const s = StyleSheet.create({
-  container: {
-    paddingLeft: 30,
-    paddingRight: 30,
-  },
-});
+export const ContentContainer: React.FC = ({ children }) => {
+  const s = useCreateStyles(() => ({
+    container: {
+      paddingLeft: 30,
+      paddingRight: 30,
+    },
+  }));
 
-export const ContentContainer: React.FC = ({ children }) => (
-  <View style={s.container}>{children}</View>
-);
+  return <View style={s.container}>{children}</View>;
+};

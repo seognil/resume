@@ -1,24 +1,23 @@
+import { Creator, useCreateStyles } from '#/utils/common-styles';
+import { LineToComp } from '#/utils/line-to-pdf';
+import { Text, View } from '@react-pdf/renderer';
 import React from 'react';
-import { View, Text, StyleSheet } from '@react-pdf/renderer';
-import { SectionTitle } from '../utils/section-title';
+import { Block } from '../utils/block';
+import { ContentContainer } from '../utils/content-container';
 import { DatedTitle } from '../utils/dated-title';
 import { ListItem } from '../utils/list-item';
-import { ContentContainer } from '../utils/content-container';
-import { Block } from '../utils/block';
-import { LineToComp } from '#/utils/line-to-pdf';
-import { MyState, useMyState } from '#/utils/make-store';
+import { SectionTitle } from '../utils/section-title';
 
-const createStyle = (s: MyState) =>
-  StyleSheet.create({
-    role: {
-      color: '#999',
-      fontSize: s.size! + 2,
-      marginBottom: 2,
-    },
-    desc: {
-      marginBottom: 4,
-    },
-  });
+const creator: Creator = (s) => ({
+  role: {
+    color: '#999',
+    fontSize: s.size! + 2,
+    marginBottom: 2,
+  },
+  desc: {
+    marginBottom: 4,
+  },
+});
 
 export const Works: React.FC<{
   title: string;
@@ -30,7 +29,7 @@ export const Works: React.FC<{
     tasks: string[];
   }[];
 }> = ({ title, works }) => {
-  const s = createStyle(useMyState());
+  const s = useCreateStyles(creator);
   return (
     <View>
       <SectionTitle>{title}</SectionTitle>

@@ -1,18 +1,16 @@
-import React from 'react';
 import data from '#/data/data-zh.json';
-import { Layout } from './layouts/layout';
-import { Header } from './layouts/header';
-import { Skills } from './layouts/skills';
+import { createCommonStyles, StylesContext } from '#/utils/common-styles';
+import React from 'react';
 import { Edu } from './layouts/edu';
-import { Works } from './layouts/works';
+import { Header } from './layouts/header';
+import { Layout } from './layouts/layout';
 import { Projs } from './layouts/projs';
-
-import { Provider } from 'react-redux';
-import { createMyStore } from '#/utils/make-store';
+import { Skills } from './layouts/skills';
+import { Works } from './layouts/works';
 
 export const ResumeContentZh: React.FC = () => (
-  <Provider
-    store={createMyStore({
+  <StylesContext.Provider
+    value={createCommonStyles({
       lang: 'zh',
       font: 'Source Han Sans',
       weight: 300,
@@ -28,5 +26,5 @@ export const ResumeContentZh: React.FC = () => (
       <Works {...data.works} />
       <Projs {...data.projs} />
     </Layout>
-  </Provider>
+  </StylesContext.Provider>
 );

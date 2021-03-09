@@ -1,10 +1,10 @@
-import React from 'react';
-import { Text, StyleSheet } from '@react-pdf/renderer';
 import { BluedLink } from '#/components/utils/blued-link';
-import { useMyState } from './make-store';
+import { Text } from '@react-pdf/renderer';
+import React from 'react';
+import { useCommonStyles } from './common-styles';
 
 const Bold: React.FC = ({ children }) => {
-  const s = useMyState();
+  const s = useCommonStyles();
   return <Text style={{ fontWeight: s.bold }}>{children}</Text>;
 };
 

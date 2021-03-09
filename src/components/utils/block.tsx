@@ -1,12 +1,12 @@
+import { useCreateStyles } from '#/utils/common-styles';
+import { View } from '@react-pdf/renderer';
 import React from 'react';
-import { View, StyleSheet } from '@react-pdf/renderer';
 
-const s = StyleSheet.create({
-  block: {
-    marginBottom: 10,
-  },
-});
-
-export const Block: React.FC = ({ children }) => (
-  <View style={s.block}>{children}</View>
-);
+export const Block: React.FC = ({ children }) => {
+  const s = useCreateStyles(() => ({
+    block: {
+      marginBottom: 10,
+    },
+  }));
+  return <View style={s.block}>{children}</View>;
+};

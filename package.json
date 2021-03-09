@@ -22,8 +22,6 @@
     "@react-pdf/renderer": "^1.6.13",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-redux": "^7.2.2",
-    "redux": "^4.0.5",
     "source-han-sans-sc-ttf": "^1.0.0",
     "typeface-lato": "^1.1.13",
     "typeface-martel": "^1.1.13",
@@ -45,7 +43,6 @@
     "@types/prettier": "^2.2.2",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.2",
-    "@types/react-redux": "^7.1.16",
     "@typescript-eslint/eslint-plugin": "^4.17.0",
     "@typescript-eslint/parser": "^4.17.0",
     "babel-plugin-module-resolver": "^4.1.0",
@@ -56,6 +53,7 @@
     "lint-staged": "^10.5.4",
     "parcel": "1.12.3",
     "prettier": "^2.2.1",
+    "prettier-plugin-organize-imports": "^1.1.1",
     "typescript": "^4.2.3"
   }
 }

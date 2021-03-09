@@ -1,24 +1,23 @@
+import { Creator, useCreateStyles } from '#/utils/common-styles';
+import { Text, View } from '@react-pdf/renderer';
 import React from 'react';
-import { View, Text, StyleSheet } from '@react-pdf/renderer';
-import { SectionTitle } from '../utils/section-title';
 import { ContentContainer } from '../utils/content-container';
-import { MyState, useMyState } from '#/utils/make-store';
+import { SectionTitle } from '../utils/section-title';
 
-const createStyle = (s: MyState) =>
-  StyleSheet.create({
-    line: {
-      fontSize: s.size,
-    },
-    label: {
-      fontWeight: s.bold,
-    },
-  });
+const creator: Creator = (s) => ({
+  line: {
+    fontSize: s.size,
+  },
+  label: {
+    fontWeight: s.bold,
+  },
+});
 
 export const Skills: React.FC<{
   title: string;
   skills: { label: string; list: string }[];
 }> = ({ title, skills }) => {
-  const s = createStyle(useMyState());
+  const s = useCreateStyles(creator);
   return (
     <View>
       <SectionTitle>{title}</SectionTitle>
